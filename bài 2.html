@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let barin = prompt("Mời bạn nhập vào đây:");
+      let username = "";
+      let number = Number(barin);
+
+      if (barin) {
+        if (!isNaN(number)) {
+          console.log("Đây không phải là chữ cái");
+        } else {
+          console.log("Đây là chữ cái");
+        }
+      } else {
+        console.log("Vui lòng nhập một giá trị");
+      }
+    </script>
+  </body>
+</html>
