@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let n = String(prompt("Loại tiền nhập vào (VND/USD)"));
+      const m = n.toUpperCase();
+
+      if (m == "VND") {
+        let a = Number(prompt("Nhập số tiền"));
+        if (!isNaN(a)) {
+          let usd = a / 23000;
+          console.log(`${a}VND = ${usd}USD`);
+        } else {
+          console.log("Không hợp lệ");
+        }
+      } else if (m == "USD") {
+        let a = Number(prompt("Nhập số tiền"));
+        if (!isNaN(a)) {
+          let usd = a * 23000;
+          console.log(`${a}USD = ${usd}VND`);
+        } else {
+          console.log("Không hợp lệ");
+        }
+      } else {
+        console.log("Không hợp lệ");
+      }
+    </script>
+  </body>
+</html>
